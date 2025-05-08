@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, #00aaff, #00ff6c);
+  color: #fff;
+}
+main {
+  min-height: 100vh;
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+}
+section {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  padding: 10px;
+  font-size: 32px;
+  font-weight: 300;
+}
+#output-screens {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100%;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+#output-screens > div {
+  margin: 0 20px;
+}
+#expression {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.2rem;
+}
+.btn {
+  flex-basis: calc(25% - 10px);
+  margin: 5px;
+  font-size: 24px;
+  height: 72px;
+  border-color: inherit;
+  border-radius: 24px;
+  color: #fff;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.2);
+  opacity: 0.7;
+}
+.light,
+.light:focus {
+  background-color: #808080;
+}
+.light:hover {
+  background-color: #8890a5;
+}
+.blue,
+.blue:focus {
+  background-color: #4b5efc;
+}
+.blue:hover {
+  background-color: #798bf9;
+}
+.dark,
+.dark:focus {
+  background-color: #2e2f38;
+}
+.dark:hover {
+  background-color: #505266;
+}
+.light:active,
+.blue:active,
+.dark:active {
+  opacity: 1;
+}
